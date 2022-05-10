@@ -1,0 +1,33 @@
+.shop-sidebar{
+    &__item{
+        background: $yellow-light;
+        border-radius: 1rem;
+        overflow: hidden;
+        &--title{
+                font-family: 'Pacifico', cursive;
+                font-size: 1.5rem;
+                background: $yellow;
+                padding: 1rem;
+                color: #fff;
+        }
+        & ul{
+            list-style: none;
+            color: $dark;
+            padding: 1.5rem;
+            & li{
+                color: inherit;
+                & a {
+                    color: inherit;
+                    text-decoration: none;
+                    
+                }
+                &.current-cat{
+                    & a{
+                        color: $red;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

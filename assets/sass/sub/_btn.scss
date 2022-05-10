@@ -1,0 +1,56 @@
+.site-btn{
+    min-height: 60px;
+    border-radius: 1000px;
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    &__icon{
+        width: 30px;
+        height: auto;
+    }
+    &__search{
+        padding: 0;
+        background: $orange;
+        min-width: 60px;
+        & input{
+            width: 0;
+            padding: 0;
+            border: 0;
+            border-radius: 1000px;
+            height: 30px;
+            transition: all 0.2s ease-in-out;
+        }
+        & svg{
+            transition: all 0.2s ease-in-out;
+        }
+        &.unfold{
+            padding: 0 1rem;
+            pointer-events: none;
+            & *{
+                pointer-events: all;
+            }
+            & input{
+                width: 200px;
+                padding: 0 1rem;
+            }
+            & svg{
+                width: 0;
+            }
+        }
+    }
+    &__yellow{
+        background: $yellow;
+        color: white;
+        &:hover{
+            background: $orange;
+            color: white;
+        }
+    }
+}

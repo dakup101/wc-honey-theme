@@ -1,0 +1,31 @@
+.hero{
+    height: 550px;
+    & .swiper{
+        height: 100%;
+        position: relative;
+        &-buttons{
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        &-button{
+            &-wrapper{
+                height: 100%;
+            }
+            &-next , &-prev{
+                width: 30px;
+                opacity: 0.8;
+            }
+            &-next:hover, &-prev:hover{
+                opacity: 1;
+            }
+            &-next::after, &-prev::after{
+                display: none;
+                content: '';
+            }
+        }
+    }
+}
