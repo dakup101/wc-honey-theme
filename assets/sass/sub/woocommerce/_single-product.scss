@@ -1,0 +1,107 @@
+.product .cart{
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+	float: right;
+}
+.product .price{
+	width: 50%;
+	float: left;
+	margin-bottom: 0;
+	height: 50px;
+	display: flex;
+	align-items: center;
+}
+.button{
+	border: none;
+	min-height: 50px;
+	border-radius: 1000px;
+	display: inline-flex;
+	width: fit-content;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.2s ease-in-out;
+	padding: 0 1.5rem;
+	text-decoration: none;
+	font-weight: 600;
+	position: relative;
+	color: white;
+}
+.button::after{
+	content: "";
+width: calc(100% - 10px);
+height: calc(100% - 10px);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+border-radius: inherit;
+border: 2px dashed #fff;
+}
+.product .single_add_to_cart_button{
+	background: #FF9853;
+}
+.product .quantity{
+	display: none;
+}
+.woocommerce-product-details__short-description{
+	padding-top: 1rem;
+	clear: both;
+}
+.product_title{
+	margin-bottom: 1rem;
+}
+.woocommerce-product-gallery img{
+	width: 100%;
+	height: auto;
+	border-radius: 1rem;
+}
+.woocommerce-breadcrumb{
+	margin: 1.5rem 0 3rem 0;
+}
+.woocommerce-tabs{
+    margin: 2.5rem 0;
+}
+.wc-tabs{
+    
+	display: flex;
+	list-style: none;
+	padding: 0;
+    margin-bottom: 0;
+    z-index: 15;
+    & li{
+        padding: 1rem 2rem;
+        background: $yellow-light;
+        color: $dark;
+        border-top: 2px solid $yellow-light;
+        & a{
+            text-decoration: none;
+            color: inherit;
+        }
+        &.active{
+            background: #fff;
+    
+        }
+        &:first-child{
+            border-top-left-radius: 1rem;
+            border-left: 2px solid $yellow-light;
+        }
+        &:last-child{
+            border-right: 2px solid $yellow-light;
+            border-top-right-radius: 1rem;
+        }
+    }
+}
+
+.woocommerce-Tabs-panel{
+    padding: 1rem 2rem;
+    border-left: 2px solid $yellow-light;
+    border-bottom: 2px solid $yellow-light;
+    border-right: 2px solid $yellow-light;
+    border-top: 2px solid $yellow-light;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin-top: -2px;
+    z-index: 10;
+}

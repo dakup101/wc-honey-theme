@@ -6,6 +6,5 @@ require_once(get_template_directory().'/functions/php-remove-editor.php');
 require_once(get_template_directory().'/functions/php-allow-svg.php');
 require_once(get_template_directory().'/functions/php-admin-sticky-update.php');
 require_once(get_template_directory().'/functions/php-register-sidebars.php');
-
-
+require_once(get_template_directory().'/functions/php-wc-single-product-summury-layout.php');
 require_once(get_template_directory().'/functions/php-unsorted.php');
