@@ -12,11 +12,10 @@
 	display: flex;
 	align-items: center;
 }
-.button{
+.button, .woocommerce button.button{
 	border: none;
 	min-height: 50px;
-	border-radius: 1000px;
-	display: inline-flex;
+    display: inline-flex;
 	width: fit-content;
 	align-items: center;
 	justify-content: center;
@@ -26,6 +25,8 @@
 	font-weight: 600;
 	position: relative;
 	color: white;
+    border-radius: 100px;
+    background: $orange;
 }
 .button::after{
 	content: "";
