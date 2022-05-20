@@ -48,12 +48,18 @@ $wrapper_classes   = apply_filters(
 		}
 		?>
 		<div class="row">
-			<div class="ht-single-product__gallery col-3">
-				<?php do_action( 'woocommerce_product_thumbnails' ); ?>
-			</div>
-			<div class="ht-singgle-product__img col-9">
-				<?php echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped ?>		
-			</div>
+            <?php if ($product->get_gallery_image_ids()) : ?>
+                <div class="ht-single-product__gallery col-3">
+                    <?php do_action( 'woocommerce_product_thumbnails' ); ?>
+                </div>
+                <div class="ht-singgle-product__img col-9">
+                    <?php echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped ?>
+                </div>
+            <?php else : ?>
+                <div class="ht-singgle-product__img col-12">
+                    <?php echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped ?>
+                </div>
+            <?php endif; ?>
 		</div>
 	</figure>
 </div>

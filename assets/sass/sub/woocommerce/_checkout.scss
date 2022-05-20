@@ -1,0 +1,79 @@
+.woocommerce .woocommerce-checkout .col2-set .col-1,
+.woocommerce .woocommerce-checkout .col2-set .col-2 {
+    width: 100% !important;
+}
+
+.woocommerce .woocommerce-checkout .col2-set .col-1 {
+    margin-bottom: 30px;
+}
+
+#billing_country_field, #shipping_country_field{
+    display: none;
+}
+.checkout{
+    color: $dark;
+    &__info-wrapper{
+        height: 100%;
+    }
+    &__info{
+        padding: 25px;
+        background: $yellow-light;
+        border-radius: 1rem;
+    }
+    & input, & textarea{
+        padding: .5rem 1rem;
+        border: 1px solid $dark;
+        border-radius: .5rem;
+    }
+}
+.woocommerce ul#shipping_method li{
+    margin: 0;
+}
+.woocommerce-checkout-review-order-table{
+    border: none !important;
+}
+#add_payment_method #payment ul.payment_methods, .woocommerce-cart #payment ul.payment_methods, .woocommerce-checkout #payment ul.payment_methods, #add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment{
+    border: none !important;
+    background: transparent !important;
+}
+.woocommerce #payment #place_order, .woocommerce-page #payment #place_order{
+    background: $yellow !important;
+}
+.woocommerce-error, .woocommerce-info, .woocommerce-message{
+    border-radius: 1rem;
+    background: none;
+    box-shadow: 0 5px 10px rgba($color: #000000, $alpha: .1);
+    border-top: none;
+}
+.woocommerce-error a, .woocommerce-info a, .woocommerce-message a{
+    color: $red;
+}
+.checkout_coupon{
+    & input{
+        width: 100%;
+        max-width: 100% !important;
+    }
+}
+
+.thank-you{
+    & ul.order_details{
+        color: white;
+    }
+    .order-info-list{
+        padding: 20px;
+        background: $orange;
+        display: flex;
+        justify-content: center;
+        max-width: 900px;
+        margin: 2rem auto 2rem auto;
+        border-radius: 1rem;
+        & ul{
+            margin: 1.5rem .5rem;
+            width: fit-content;
+        }
+    }
+}
+.ty-customer-info{
+    max-width: 900px;
+    margin: 0 auto;
+}

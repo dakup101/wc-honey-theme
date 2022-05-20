@@ -1,7 +1,8 @@
 export default function manageSeachInput(searchBtn : HTMLElement){
 
     let searchInput = document.getElementById('searchInput');
-    let overlay = document.querySelector('.page-overlay') as HTMLElement;
+    let addCartPopup = document.querySelector('.added-to-cart-popup');
+    let overlay = document.querySelector('.page-overlay');
     searchBtn.addEventListener('click', e => {
         if (e.target == e.currentTarget){
             e.preventDefault();
@@ -27,4 +28,28 @@ export default function manageSeachInput(searchBtn : HTMLElement){
         overlay.classList.remove('active');
     })
 
+    //After WC Ajax add to cart
+    document.addEventListener('vanilla_added_to_cart', () => {
+        overlay.classList.add('active');
+        addCartPopup.classList.add('show');
+        document.querySelector('.add_to_cart_button').innerHTML="Kup jeszcze raz";
+
+    })
+    // After WC Ajax adding to cart
+    document.addEventListener('vanilla_adding_to_cart', () => {
+        document.querySelector('.add_to_cart_button').innerHTML = "Dodaję produkt..."
+    })
+    //Overlay click
+    window.addEventListener('click', e =>{
+        if (!searchBtn.contains(e.target as Node) || !addCartPopup.contains(e.target as Node)){
+            searchBtn.classList.remove('unfold')
+            addCartPopup.classList.remove('show')
+            overlay.classList.remove('active')
+        }
+    })
+    // Continue shopping
+    document.querySelector('.continue-shopping').addEventListener('click', (e) =>{
+        e.preventDefault();
+        (overlay as HTMLElement).click();
+    })
 }

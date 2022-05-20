@@ -6,6 +6,7 @@
 .product-card{
     text-decoration: none;
     color: $dark;
+    position: relative;
     &__image{
         width: 100%;
         position: relative;
@@ -22,6 +23,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        transition: all .2s ease-in-out;
         &--title{
             font-size: 1rem;
             text-align: center;
@@ -39,11 +41,15 @@
         }
     }
     &:hover{
+        color: $red;
         & .product-card{
             &__image{
                 box-shadow: 0 7px 15px rgba(0,0,0,0.2);
                 transform: translateY(-15px);
             }
+        }
+        &{
+            color: $red;
         }
     }
 }
@@ -112,4 +118,79 @@
         text-align: center;
         border-radius: 1rem;
     }
+}
+.onsale{
+    position: absolute;
+    top: 1rem;
+    left: -2rem;
+    padding: .5rem 1rem;
+    background: $yellow-light;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 15px rgba(0,0,0,.1);
+}
+.ajax_add_to_cart{
+    float: right;
+}
+.product_meta{
+    clear: both;
+}
+#commentform{
+    display: none;
+}
+.added-to-cart-popup{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 7px 15px rgba(0,0,0,0.2);
+    background: #fff;
+    opacity: 0;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-40%);
+    transition: all .2s ease-in-out;
+    &.show{
+        opacity: 1;
+        pointer-events: all;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    &__btns{
+        display: flex;
+        gap: 1rem;
+    }
+}
+.shop-products.columns-4{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr !important;
+}
+.woocommerce-product-details__short-description{
+    width: 70%;
+}
+.product_meta{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.product_meta a{
+    color: $red;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    &:hover{
+        color: $orange;
+    }
+}
+.loop-on-sale{
+    position: absolute;
+    top: 1rem;
+    left: -2rem;
+    padding: 0.5rem 1rem;
+    background: $yellow-light;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 }

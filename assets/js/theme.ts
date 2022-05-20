@@ -1,8 +1,8 @@
 console.log('--- Loaded ---')
-
 let localhost = true;
 const view = helper(localhost);
 console.log('Current View:' + view)
+
 
 // Global Scripts
 window.addEventListener('DOMContentLoaded', () => {
@@ -16,11 +16,6 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     );
     //Remove classes form elements on clicked outside them
-    window.addEventListener('click', e =>{
-        if (!searchBtn.contains(e.target as Node)){
-            searchBtn.classList.remove('unfold')
-        }
-    })
 
     switch (view) {
         case '/':
@@ -32,6 +27,8 @@ window.addEventListener('DOMContentLoaded', () => {
             );
             break;
     }
+
+
 });
 
 //Load Scripts on Demand (depending on view)

@@ -18,7 +18,15 @@
             </div>
         </div>
     </div>
-    
+    <div class="page-overlay"></div>
+    <div class="added-to-cart-popup">
+        <h3>Dodano do koszyka</h3>
+        <p>Ten produkt został dodany do Twojego koszyka. Chcesz przejść do koszyka czy kontyniuować zakupy?</p>
+        <div class="added-to-cart-popup__btns">
+            <a href="<?php echo wc_get_cart_url(); ?>" class="go-to-cart site-btn site-btn__yellow dash-bordered">Przejdź do koszyka</a>
+            <a href="#" class="continue-shopping site-btn site-btn__yellow dash-bordered">Kontynuj zakupy</a>
+        </div>
+    </div>
     <?php wp_footer() ?>
 </footer>
 </body>

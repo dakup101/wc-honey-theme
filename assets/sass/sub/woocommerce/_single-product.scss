@@ -12,10 +12,10 @@
 	display: flex;
 	align-items: center;
 }
-.button, .woocommerce button.button{
+.button, .woocommerce button.button, .checkout-button{
 	border: none;
 	min-height: 50px;
-    display: inline-flex;
+    display: inline-flex !important;
 	width: fit-content;
 	align-items: center;
 	justify-content: center;
@@ -25,8 +25,13 @@
 	font-weight: 600;
 	position: relative;
 	color: white;
-    border-radius: 100px;
+    border-radius: 100px !important;
     background: $orange;
+    flex-shrink: 0;
+}
+.checkout-button{
+    background: $yellow !important;
+    align-self: flex-end;
 }
 .button::after{
 	content: "";

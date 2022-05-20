@@ -14,6 +14,11 @@ $link = $product->get_permalink();
 		<div class="product-card__image mb-3 text-center">
 			<?php echo $image ?>
 		</div>
+		<?php if ($sale_price) : ?>
+			<!-- <div class="loop-on-sale">
+				Promocja!
+			</div> -->
+		<?php endif; ?>
 		<div class="product-card__content">
 			<div class="product-card__content--title">
 				<h3><?php echo $name ?></h3>
