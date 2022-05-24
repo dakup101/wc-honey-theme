@@ -97,7 +97,7 @@
 
 .site-btn {
   min-height: 60px;
-  border-radius: 1000px;
+  border-radius: 1000px !important;
   display: inline-flex;
   width: fit-content;
   align-items: center;
@@ -931,6 +931,110 @@ td.product-name a {
 .ty-customer-info {
   max-width: 900px;
   margin: 0 auto;
+}
+
+.woocommerce-MyAccount-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+.woocommerce-MyAccount-navigation a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  color: white;
+}
+.woocommerce-MyAccount-navigation a svg {
+  width: 23px;
+}
+.woocommerce-MyAccount-navigation a:hover {
+  color: #B5421F;
+  text-decoration: underline;
+}
+
+.my-account .col-md-3 {
+  position: relative;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  height: fit-content;
+}
+.my-account .col-md-3:before {
+  content: "";
+  position: absolute;
+  width: 1000px;
+  height: 100%;
+  right: calc(100% - 2px);
+  top: 0;
+  background: #F7B500;
+}
+.my-account .woocommerce-orders-table, .my-account .woocommerce-orders-table * {
+  border: none !important;
+}
+.my-account .woocommerce-orders-table img {
+  width: 75px;
+  border-radius: 10px;
+}
+.my-account .woocommerce-orders-table a {
+  color: #F7B500;
+  text-decoration: none;
+  font-weight: bold;
+}
+.my-account legend {
+  margin-top: 2rem;
+}
+.my-account form[enctype="multipart/form-data"] {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.changed-order-status {
+  font-weight: bold;
+  color: #FF9853;
+}
+
+.woocommerce-orders-table__header-order-actions, .woocommerce-orders-table__cell-order-actions {
+  display: none;
+}
+
+.woocommerce form input, .woocommerce form textarea {
+  padding: 0.5rem 1rem;
+  border: 1px solid #4D3800;
+  border-radius: 0.5rem;
+}
+.woocommerce form legend {
+  border: inherit;
+}
+.woocommerce form button[type=submit] {
+  margin-top: 1rem;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  color: white;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+.user-profile__img-wrapper {
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.user-profile__img-wrapper img {
+  min-height: 100%;
+  width: 100%;
 }
 
 .woocommerce-breadcrumb {

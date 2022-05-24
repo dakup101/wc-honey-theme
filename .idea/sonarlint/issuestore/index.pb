@@ -25,8 +25,6 @@ L
 assets/sass/sub/_search.scss,7/b/7b6f76d1dbb49a26dc1798948f48c6947e65e0fc
 R
 "assets/sass/sub/_user-buttons.scss,5/d/5d460018b1a5a397df5fc51c2606ab6bae0f9cf1
-T
-$woocommerce/myaccount/view-order.php,f/4/f47863ddd347ad201fd3ac1d1a36ac202e4225d4
 W
 'functions/php-order-statuses-update.php,5/8/58ffb6ceddab8f2a19de3e1128b75190a37a2c50
 M
@@ -39,8 +37,5 @@ O
 assets/sass/sub/_variables.scss,8/b/8b12e75ba9996152680fb7c19eaf16725a266a3e
 U
 %assets/sass/sub/_site-navigation.scss,d/a/da724bec73cd94f9740103e3be7b74d2cc52924e
-:
-
-header.php,6/3/6314feee14ea09173c34632864f7659d9d5a5a84
 =
 functions.php,6/4/643aa1403c67715cb89bd66603f19c787bddaea9
