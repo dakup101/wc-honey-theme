@@ -14,3 +14,10 @@
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
 //add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 15 );
 add_action ('woocommerce_single_product_summary', 'woocommerce_template_loop_add_to_cart', 15);
+add_action ('woocommerce_single_product_summary', 'add_to_whislist_btn', 17);
+
+
+function add_to_whislist_btn(){
+    global $product;
+    echo do_shortcode('[ti_wishlists_addtowishlist product_id="'.$product->get_id().'"]');
+}

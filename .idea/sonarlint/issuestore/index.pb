@@ -13,8 +13,6 @@ d
 4woocommerce/single-product/add-to-cart/variation.php,1/0/10ef5ca46a6742c06bdfae50764c70431c5d56b1
 c
 3woocommerce/single-product/add-to-cart/variable.php,7/4/74dcf9fc7f0d238d38a70e80dee9ca2ab3c10253
-V
-&woocommerce/content-single-product.php,b/4/b4de6fc61d66adea553410b2b8b9a599abcf541a
 Y
 )woocommerce/single-product/photoswipe.php,f/1/f12081227731e20cf2aeecbacebb0ff6db8ac2a0
 T
@@ -29,8 +27,6 @@ W
 'functions/php-order-statuses-update.php,5/8/58ffb6ceddab8f2a19de3e1128b75190a37a2c50
 M
 assets/js/manageSeachInput.ts,8/a/8a1322fce1dc2dea75fc065aef6a3c6ee34229f8
-b
-2functions/php-wc-single-product-summury-layout.php,0/a/0afb6e9a9094e0325adc13b4950ff518cea9009b
 `
 0assets/sass/sub/woocommerce/_single-product.scss,3/3/337567aa7b9ff317e8fdae7095f6a411820cf2e8
 O

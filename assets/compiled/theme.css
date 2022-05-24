@@ -60,6 +60,18 @@
   background-position: center;
 }
 
+.wishlist_products_counter_text {
+  display: none;
+}
+
+.tinvwl-to-left.look_in {
+  display: none;
+}
+
+main {
+  min-height: 50vh;
+}
+
 .user-buttons {
   display: inline-flex;
   align-items: center;
@@ -1035,6 +1047,113 @@ td.product-name a {
 .user-profile__img-wrapper img {
   min-height: 100%;
   width: 100%;
+}
+
+.bbp-topic-freshness a, .bbp-topic-permalink {
+  color: #F7B500;
+  font-weight: bold;
+}
+
+.bbp-topic-freshness a:hover, .bbp-topic-permalink:hover {
+  color: #B5421F;
+}
+
+.bbp-breadcrumb a {
+  color: #4D3800;
+  text-decoration: none;
+}
+.bbp-breadcrumb a:hover {
+  color: #B5421F;
+  text-decoration: underline;
+}
+
+.bbp-breadcrumb-current {
+  color: #B5421F;
+}
+
+.bbp-breadcrumb-root, .bbp-breadcrumb-root + span {
+  display: none !important;
+}
+
+.bbp-author-link {
+  color: #4D3800 !important;
+  text-decoration: none;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.bbp-header, .bbp-footer {
+  background: #FFF2CF !important;
+  border: none !important;
+}
+
+.bbp-topics, .bbp-replies {
+  border: none !important;
+  border-radius: 1rem;
+}
+
+.topic, .bbp-header, .bbp-footer {
+  padding: 0.5rem 1rem !important;
+}
+
+.bbp-author-role {
+  display: none !important;
+}
+
+.bbp-reply-ip {
+  display: none !important;
+}
+
+.single-topic .bbp-author-avatar {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 100px;
+  border: 1px solid #4D3800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.single-topic .bbp-author-avatar img {
+  height: 100%;
+  min-width: 100%;
+  margin-top: 0 !important;
+}
+.single-topic .bbp-reply-author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.single-topic .bbp-reply-author .bbp-author-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#qt_bbp_reply_content_toolbar, #qt_bbp_topic_content_toolbar {
+  display: none !important;
+}
+
+.bbp-form {
+  background: #e6e6e6;
+  border: none !important;
+  border-radius: 1rem;
+  padding: 1rem !important;
+}
+.bbp-form .bbp-the-content-wrapper + p {
+  display: none !important;
+}
+.bbp-form textarea, .bbp-form input {
+  border: 1px solid #4D3800;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.bbp-topic-tags {
+  display: none !important;
 }
 
 .woocommerce-breadcrumb {
