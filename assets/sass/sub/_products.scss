@@ -157,6 +157,7 @@
     &.show{
         opacity: 1;
         pointer-events: all;
+        z-index: 600;
         transform: translateX(-50%) translateY(-50%);
     }
     &__btns{
@@ -193,4 +194,15 @@
     background: $yellow-light;
     border-radius: 1rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.quick-buy{
+    background: $yellow !important;
+    margin-left: 1rem;
+}
+.button:hover, .site-btn:hover{
+    color: #fff !important;
+    background: $orange-dark !important;
+}
+.site-btn.go-to-cart{
+    background: $orange;
 }

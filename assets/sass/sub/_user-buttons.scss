@@ -11,6 +11,7 @@
     &__btn{
         position: relative;
         display: inline-block;
+        z-index: 10;
         &--notifier{
             position: absolute;
             right: -10px;

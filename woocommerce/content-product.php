@@ -23,19 +23,20 @@ $link = $product->get_permalink();
 			<div class="product-card__content--title">
 				<h3><?php echo $name ?></h3>
 			</div>
-			<div class="product-card__content--price">
+			<div class="product-card__content--price text-center">
 				<?php if ($sale_price) : ?>
 					<span class="product-card__content--price--old">
-						<?php echo $price; ?>
+						<?php echo $price; ?> zł
 					</span>
 					<span class="product-card__content--price--regular">
-						<?php echo $sale_price; ?>
+						<?php echo $sale_price; ?> zł
 					</span>
 				<?php else : ?>
 					<span class="product-card__content--price--regular">
-						<?php echo $price; ?>
+						<?php echo $price; ?> zł
 					</span>
 				<?php endif; ?>
+                <div data-product_id="<?php echo $product->get_id(); ?>" class="mt-2 yith-wcqv-button">Szybki podląd</div>
 			</div>
 		</div>
 	</a>

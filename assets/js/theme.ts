@@ -1,7 +1,7 @@
 console.log('--- Loaded ---')
 let localhost = true;
 const view = helper(localhost);
-console.log('Current View:' + view)
+console.log('Current View: ' + view)
 
 
 // Global Scripts

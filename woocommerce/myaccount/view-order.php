@@ -23,6 +23,10 @@ $notes = $order->get_customer_order_notes();
 ?>
 <p>
 <?php
+// Zmiana notyfikacji
+$order_changed = $order->get_meta('_status_changed');
+if ($order_changed) update_post_meta($order_id, '_status_changed', 'seen');
+echo '<br>';
 printf(
 	/* translators: 1: order number 2: order date 3: order status */
 	esc_html__( 'Order #%1$s was placed on %2$s and is currently %3$s.', 'woocommerce' ),

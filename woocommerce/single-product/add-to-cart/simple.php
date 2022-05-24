@@ -47,7 +47,7 @@ if ( $product->is_in_stock() ) : ?>
 		?>
 
 		<button type="submit" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" class="single_add_to_cart_button button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
-
+        <a href="?add-to-cart=29" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="29" data-product_sku="H-984938" aria-label="Dodaj „Testowy Produkt 2” do koszyka" rel="nofollow">Buy It Now</a>
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 	</form>
 

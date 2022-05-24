@@ -4,10 +4,11 @@ export default function manageSeachInput(searchBtn : HTMLElement){
     let addCartPopup = document.querySelector('.added-to-cart-popup');
     let overlay = document.querySelector('.page-overlay');
     searchBtn.addEventListener('click', e => {
+        console.log(searchBtn);
         if (e.target == e.currentTarget){
-            e.preventDefault();
             let btn = e.currentTarget as Element;
-            btn.classList.toggle('unfold');
+            searchBtn.classList.toggle('unfold');
+            overlay.classList.add('active');
             searchInput.focus();
         }
     })
@@ -33,6 +34,9 @@ export default function manageSeachInput(searchBtn : HTMLElement){
         overlay.classList.add('active');
         addCartPopup.classList.add('show');
         document.querySelector('.add_to_cart_button').innerHTML="Kup jeszcze raz";
+        let itemsInCart = parseInt(document.getElementById('inMyCart').innerHTML);
+        itemsInCart++;
+        document.getElementById('inMyCart').innerHTML = ''+itemsInCart;
 
     })
     // After WC Ajax adding to cart
@@ -41,7 +45,7 @@ export default function manageSeachInput(searchBtn : HTMLElement){
     })
     //Overlay click
     window.addEventListener('click', e =>{
-        if (!searchBtn.contains(e.target as Node) || !addCartPopup.contains(e.target as Node)){
+        if (!searchBtn.contains(e.target as Node)){
             searchBtn.classList.remove('unfold')
             addCartPopup.classList.remove('show')
             overlay.classList.remove('active')
@@ -52,4 +56,5 @@ export default function manageSeachInput(searchBtn : HTMLElement){
         e.preventDefault();
         (overlay as HTMLElement).click();
     })
+    // Cart Button
 }

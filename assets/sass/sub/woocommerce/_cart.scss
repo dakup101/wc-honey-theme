@@ -51,13 +51,14 @@ td.product-name a{
     justify-content: space-between;
 }
 .cart-collaterals{
-    padding-left: 3.5rem;
     height: 100%;
+    display: flex;
+    justify-content: flex-end;
     & .cart_totals {
         position: sticky;
         top: 120px;
-        background: #E6E6E6;
-        width: 100% !important;
+        background: #EEEEEE;
+        width: 325px !important;
         float: unset !important;
         padding: 1rem;
         // border: 1px solid #BCAAA4;
@@ -65,7 +66,7 @@ td.product-name a{
         border-radius: 1rem;
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: .8rem;
         align-items: flex-start;
     }
     & table{

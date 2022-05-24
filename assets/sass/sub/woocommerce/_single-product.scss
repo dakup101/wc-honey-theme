@@ -2,17 +2,16 @@
 	width: 50%;
 	display: flex;
 	justify-content: flex-end;
-	float: right;
 }
 .product .price{
 	width: 50%;
-	float: left;
 	margin-bottom: 0;
 	height: 50px;
 	display: flex;
 	align-items: center;
 }
 .button, .woocommerce button.button, .checkout-button{
+    float: left;
 	border: none;
 	min-height: 50px;
     display: inline-flex !important;

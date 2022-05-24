@@ -45,3 +45,55 @@
 .added_to_cart{
     display: none !important;
 }
+.pswp__bg{
+    opacity: .6 !important;
+}
+.yith-wcqv-main .col-3{
+    display: none;
+}
+.yith-wcqv-main .col-9{
+    width: 100%;
+    margin-right: 2rem;
+}
+.yith-wcqv-main .product{
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+}
+.yith-wcqv-main form{
+    display: flex;
+    gap: 1rem;
+    width: 100% !important;
+    margin-bottom: 0 !important;
+    margin-top: 1rem;
+    justify-content: flex-start !important;
+    & button{
+        background: $yellow !important;
+        font-weight: 700 !important;
+        color: #fff !important;
+        &:hover{
+            background: $orange-dark !important;
+        }
+    }
+    & a{
+        background: $orange !important;
+        font-weight: 700 !important;
+        color: #fff !important;
+        &:hover{
+            background: $orange-dark !important;
+        }
+    }
+}
+.yith-wcqv-main .woocommerce-product-details__short-description{
+    width: 100% !important;
+}
+.yith-wcqv-main .price{
+    color: $dark;
+}
+.yith-wcqv-button{
+    text-decoration: underline;
+    color: $dark !important;
+    &:hover{
+        color: $orange-dark !important;
+    }
+}

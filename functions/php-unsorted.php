@@ -17,3 +17,25 @@ add_filter( 'woocommerce_get_breadcrumb', function($crumbs, $Breadcrumb){
     }
     return $crumbs;
 }, 10, 2 );
+
+if(class_exists('WooCommerce')){
+//    add_theme_support( 'wc-product-gallery-zoom' );
+    add_theme_support( 'wc-product-gallery-lightbox' );
+    add_theme_support( 'wc-product-gallery-slider' );
+}
+
+function wpcoderpro_direct_checkout_button() {
+    global $product;
+    $id = $product->get_id();
+    if( $product->is_type( 'variable' ) ){
+        echo '
+     <a class="button quick-buy" href="'.home_url('/zamowienie/?add-to-cart='.$id).'">Kup Teraz</a>
+';
+    }
+    elseif( $product->is_type( 'simple' ) ){
+        echo '
+    <a class="button quick-buy" href="'.home_url('/zamowienie/?add-to-cart='.$id).'">Kup Teraz</a>
+';
+    }
+}
+add_action( 'woocommerce_single_product_summary', 'wpcoderpro_direct_checkout_button', 16 );
