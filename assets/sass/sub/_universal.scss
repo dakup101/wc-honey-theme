@@ -40,6 +40,32 @@
 .tinvwl-to-left.look_in{
     display: none;
 }
+.tinvwl_add_to_wishlist_button{
+    position: relative;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 100px;
+    margin-left: 1rem;
+    color: white;
+    font-weight: bold;
+    background: $orange;
+    transition: all .2s ease-in-out;
+    &::after{
+        content: '';
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        border-radius: inherit;
+        border: $dash-border;
+    }
+    &:hover{
+        background: $orange-dark;
+        color: white;
+    }
+}
 main{
     min-height: 50vh;
 }

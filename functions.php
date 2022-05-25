@@ -10,6 +10,7 @@ require_once(get_template_directory().'/functions/php-wc-single-product-summury-
 require_once(get_template_directory().'/functions/php-unsorted.php');
 require_once(get_template_directory().'/functions/php-change-breadcrumb-separator.php');
 require_once(get_template_directory().'/functions/php-order-statuses-update.php');
+require_once(get_template_directory().'/functions/php-ajax-search.php');
 
 add_action( 'wp_footer', 'trigger_for_ajax_add_to_cart' );
 function trigger_for_ajax_add_to_cart() {

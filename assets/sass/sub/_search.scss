@@ -34,10 +34,16 @@
         padding: .5rem 1rem;
         border-radius: .25rem;
         margin-bottom: .25rem;
+        color: $dark;
+        font-size: 14px;
         transition: all .2s ease-in-out;
+        text-decoration: none;
         &:hover{
             background: #ededed;
             cursor: pointer;
+        }
+        &--name{
+            text-transform: none;
         }
     }
     &__footer{
@@ -61,8 +67,22 @@
         }
     }
     .show-results &{
-        top: calc(100% + 1.5rem);
+        top: calc(100% + 2rem);
         pointer-events: all;
         opacity: 1;
+    }
+}
+.other-results{
+    width: 100%;
+    text-align: center;
+    background: $orange;
+    padding: .5rem 1rem;
+    border-radius: 100px;
+    color: white;
+    text-decoration: none;
+    margin-top: 1rem;
+    &:hover{
+        background: $orange-dark;
+        color: white;
     }
 }

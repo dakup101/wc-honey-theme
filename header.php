@@ -100,7 +100,11 @@
                 <div class="user-buttons dash-bordered">
                     <a href="<?php echo home_url('/moje-konto') ?>" class="user-buttons__btn user-buttons__btn--profile" id="myProfile">
                         <?php
-                        $changed_orders = wc_get_orders( array( 'status_changed' => 'changed' ) );
+                        $customer_user_id = get_current_user_id();
+                        $changed_orders = wc_get_orders( array(
+                                'status_changed' => 'changed',
+                                'customer_id' => $customer_user_id
+                        ));
                         $changed_orders_amount = sizeof($changed_orders);
                         if ($changed_orders_amount !== 0) :
                         ?>

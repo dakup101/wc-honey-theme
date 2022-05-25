@@ -20,7 +20,11 @@
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
-$changed_orders = wc_get_orders(array('status_changed' => 'changed'));
+$customer_user_id = get_current_user_id();
+$changed_orders = wc_get_orders( array(
+    'status_changed' => 'changed',
+    'customer_id' => $customer_user_id
+));
 ?>
 
 <?php if ($changed_orders) : ?>
