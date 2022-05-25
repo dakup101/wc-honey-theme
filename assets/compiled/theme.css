@@ -172,8 +172,9 @@ main {
   color: #4D3800;
   text-decoration: none;
   display: flex;
-  gap: 0.5rem;
+  gap: 0.7rem;
   align-items: center;
+  font-size: 18px;
 }
 .site-navigation__item.active {
   color: #B5421F;

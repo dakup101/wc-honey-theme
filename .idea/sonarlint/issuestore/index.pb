@@ -31,7 +31,5 @@ M
 0assets/sass/sub/woocommerce/_single-product.scss,3/3/337567aa7b9ff317e8fdae7095f6a411820cf2e8
 O
 assets/sass/sub/_variables.scss,8/b/8b12e75ba9996152680fb7c19eaf16725a266a3e
-U
-%assets/sass/sub/_site-navigation.scss,d/a/da724bec73cd94f9740103e3be7b74d2cc52924e
 =
 functions.php,6/4/643aa1403c67715cb89bd66603f19c787bddaea9

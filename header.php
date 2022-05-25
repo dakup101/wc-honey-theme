@@ -60,6 +60,9 @@
                     <a href="<?php echo home_url().'/o-nas/' ?>" class="site-navigation__item">
                         <span class="site-naviagtion__item--text">O nas</span>
                     </a>
+                    <a href="<?php echo home_url().'/kontakt'; ?>" class="site-navigation__item">
+                        <span class="site-navigation__item--text">Kontakt</span>
+                    </a>
                     <a href="<?php echo home_url(); ?>" class="site-navigation__item">
                         <span class="site-navigation__item--text">Home</span>
                     </a>

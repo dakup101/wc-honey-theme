@@ -5,8 +5,9 @@
         color: $dark;
         text-decoration: none;
         display: flex;
-        gap: .5rem;
+        gap: .7rem;
         align-items: center;
+        font-size: 18px;
         &.active{
             color: $red;
         }
