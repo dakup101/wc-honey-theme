@@ -1245,4 +1245,46 @@ td.product-name a {
   color: #DF7C3A !important;
 }
 
+.about-first__img img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.about-second {
+  background: #FFF2CF;
+}
+
+.about-second .col-12:nth-child(1) .boxes__item {
+  background: #FF9853;
+}
+.about-second .col-12:nth-child(2) .boxes__item {
+  background: #FF7B53;
+}
+.about-second .col-12:nth-child(3) .boxes__item {
+  background: #FF5E53;
+}
+
+.about-third__content {
+  position: relative;
+  z-index: 15;
+  margin: 5rem 0;
+  color: white;
+}
+.about-third__overlay {
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  transform: translateY(-50%);
+  height: 130%;
+  width: 2000px;
+  background: #FF9853;
+  z-index: -1;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.about-third__img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
 /*# sourceMappingURL=theme.css.map */

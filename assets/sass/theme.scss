@@ -99,3 +99,48 @@
         color: $orange-dark !important;
     }
 }
+
+.about-first{
+    &__img img{
+        width: 100%;
+        border-radius: 1rem;
+    }
+}
+.about-second{
+    background: $yellow-light;
+}
+.about-second{
+    & .col-12:nth-child(1) .boxes__item{
+        background: $orange;
+    }
+    & .col-12:nth-child(2) .boxes__item{
+        background: #FF7B53;
+    }
+    & .col-12:nth-child(3) .boxes__item{
+        background: #FF5E53;
+    }
+}
+.about-third{
+    &__content{
+        position: relative;
+        z-index: 15;
+        margin: 5rem 0;
+        color: white;
+    }
+    &__overlay{
+        position: absolute;
+        top: 50%;
+        right: -10%;
+        transform: translateY(-50%);
+        height: 130%;
+        width: 2000px;
+        background: $orange;
+        z-index: -1;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+    &__img{
+        width: 100%;
+        border-radius: 1rem;
+    }
+}

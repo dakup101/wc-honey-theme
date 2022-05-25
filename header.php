@@ -54,8 +54,11 @@
                     <a href="http://localhost/honey/sklep/" class="site-navigation__item">
                         <span class="site-navigation__item--text">Sklep</span>
                     </a>
-                    <a href="<?php echo home_url().'/forum/honey-forum/' ?>" class="site-navigation__item active">
+                    <a href="<?php echo home_url().'/forum/honey-forum/' ?>" class="site-navigation__item">
                         <span class="site-naviagtion__item--text">Forum</span>
+                    </a>
+                    <a href="<?php echo home_url().'/o-nas/' ?>" class="site-navigation__item">
+                        <span class="site-naviagtion__item--text">O nas</span>
                     </a>
                     <a href="<?php echo home_url(); ?>" class="site-navigation__item">
                         <span class="site-navigation__item--text">Home</span>
